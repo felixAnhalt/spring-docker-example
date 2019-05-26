@@ -1,0 +1,1 @@
+cmd /k C:\path\to\ngrok\ngrok http 8080

@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  demo:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_OPTS=-Xmx256m
+    networks:
+      - demo
+    mem_limit: 256M
+    
+networks:
+ demo:
